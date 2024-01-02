@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <title>Forecaster</title>
+  <style>
+    .btn{
+      min-height: 30px;
+      min-width: 70px;
+      padding: 15px;
+      border: none;
+      cursor: pointer;
+      border-radius: 3px;
+      letter-spacing: 1px;
+    }
+    .btn:hover{
+      background-color: #b58818;
+      color: white;
+    }
+    .active{
+      
+      background-color: #18d26e;
+      color: black;
+    }
+    body{
+      background-color: black;
+    }
+  </style>
+</head>
+<body>
+  <div style="margin-top:3%;text-align: center;margin-bottom: 3%;">
+
+    <button class="btn " id="historic" onclick="switchHistorical()">Historical Data</button>
+    <button class="btn" id="forcast" onclick="switchForecast()">Forecasting</button>
+
+  </div>
+  <div style="width: 100vh; margin: auto;">
+    <canvas id="myChart"></canvas>
+  </div>
+
+  <div style="margin-top:3%;text-align: center;" id="btngrp">
+    <button class="btn" onclick="prev()">Previous</button>
+    <button class="btn" onclick="next()">Next</button>
+  </div>
+
+</body>
+</html>
+  
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="./data.js"></script>
+
+  

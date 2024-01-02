@@ -1,0 +1,23 @@
+{
+    "name": "Safyan Portfolio",
+    "short_name": "Portfolio",
+    "description": "This website is just Muhammad Safyan Jelani portfolio",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#000000e6",
+    "theme_color": "#000000e6",
+    "icons": [
+      {
+        "src": "./icon.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ],
+    "splash_screen": {
+        "image": "./assets/img/me2.jpg",
+        "sizes": "1956x2210",
+        "background_color": "#000000e6",
+        "theme_color": "#000000e6"
+    }
+  }
+  

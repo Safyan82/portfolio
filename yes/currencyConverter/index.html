@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency converter</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+</head>
+<body onload="loadJSON('gbp');">
+    <div class="currency-container">
+        
+        <h2 style="color:#18d26e">Currency Converter</h2>
+        
+        <div class="form-item sourceField" >
+            <input value="1" autofocus min="1" oninput="handelSourceAmount(event)" id="sourceAmount" defaultValue="1" type="number"/>
+            <select id="source" oninput="handelSourceChange(event)">
+                <option value="GBP">U.K. Pound Sterling</option>
+            </select>
+        </div>
+
+        
+        <div class="form-item">
+            <input id="destAmount" readonly/>
+            <select id="dest" oninput="handelDest(event)"></select>
+        </div>
+
+        <div id="detailsContainer"></div>
+    </div>
+</body>
+<script src="./assets/js/main.js"></script>
+</html>
